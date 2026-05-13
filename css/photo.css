@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#050505;
+  color:white;
+  font-family:'Poppins',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  position:relative;
+}
+
+.background{
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(circle at center,
+  rgba(139,92,246,0.12),
+  rgba(0,0,0,0.95));
+}
+
+.container{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+
+.top-text{
+  color:#ff4d88;
+  letter-spacing:3px;
+  margin-bottom:20px;
+  font-size:0.8rem;
+}
+
+h1{
+  font-family:'Cinzel',serif;
+  margin-bottom:15px;
+}
+
+.sub{
+  color:#aaa;
+  margin-bottom:35px;
+}
+
+#puzzle{
+  width:452px;
+  height:452px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,113px);
+  grid-template-rows:repeat(4,113px);
+
+  gap:0;
+}
+
+.tile{
+  width:113px;
+  height:113px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  cursor:pointer;
+
+  background-repeat:no-repeat;
+
+  transition:0.2s;
+}
+
+.tile:hover{
+  filter:brightness(1.15);
+}
+
+#message{
+  margin-top:30px;
+  min-height:120px;
+}

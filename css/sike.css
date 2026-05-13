@@ -1,0 +1,75 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:black;
+  color:white;
+  font-family:monospace;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  position:relative;
+}
+
+.glitch{
+  position:absolute;
+  inset:0;
+
+  background:
+  repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  animation:flicker 0.15s infinite;
+}
+
+@keyframes flicker{
+
+  0%{
+    opacity:0.95;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0.92;
+  }
+
+}
+
+.container{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+
+.top-text{
+  color:red;
+  letter-spacing:4px;
+  margin-bottom:25px;
+}
+
+h1{
+  font-size:4rem;
+  margin-bottom:25px;
+}
+
+.message{
+  color:#bbb;
+  margin-bottom:20px;
+}
+
+.small{
+  color:#666;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Broken Clock</title>
+
+  <link rel="stylesheet" href="../css/clock.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+
+    <p class="top-text">
+      TEMPORAL FILE RECOVERED
+    </p>
+
+    <h1>
+      “The city gave her freedom,
+      but only until the gates whispered shut.”
+    </h1>
+
+    <p class="sub">
+      Restore the correct time to recover the signal.
+    </p>
+
+    <div class="clock-box">
+
+      <input
+        type="number"
+        id="hour"
+        placeholder="HH"
+        min="1"
+        max="12"
+      >
+
+      <span>:</span>
+
+      <input
+        type="number"
+        id="minute"
+        placeholder="MM"
+        min="0"
+        max="59"
+      >
+
+    </div>
+
+    <button id="verifyBtn">
+      VERIFY TIME
+    </button>
+
+    <div id="result"></div>
+
+  </div>
+
+  <script src="../js/clock.js"></script>
+
+</body>
+</html>
